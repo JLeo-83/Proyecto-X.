@@ -1,7 +1,27 @@
 import { Canvas } from "@react-three/fiber"; // Importa Canvas
-import { PerspectiveCamera } from "@react-three/drei"; // Importa PerspectiveCamera
+import CanvasLoader from "../components/CanvasLoader";
+import { PerspectiveCamera, Ring } from "@react-three/drei"; // Importa PerspectiveCamera
+import HackerRoom from "../components/HackerRoom";
+import { Suspense } from "react";
+// import { Leva, useControls } from "leva";
+// import { max, min } from "three/webgpu";
+import { useMediaQuery } from "react-responsive";
+import { calculateSizes } from "../constants/index";
+import Target from "../components/Target";
+import ReactLogo from "../components/ReactLogo";
+import Cube from "../components/Cube";
+import Rings from "../components/Rings";
+import HeroCamera from "../components/HeroCamera";
+import Button from "../components/Button";
 
 const Hero = () => {
+
+  const isSmall = useMediaQuery({ maxWidth: 440 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+
+  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+
   return (
     <section className="min-h-screen w-full flex flex-col relative">
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
@@ -10,24 +30,42 @@ const Hero = () => {
           <span className="waving-hand">✌️</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          Building Products & Brands - Leandro
+          Building Products & Brands
         </p>
       </div>
       <div className="w-full h-full absolute inset-0">
+        {/* <Leva /> */}
         <Canvas className="w-full h-full">
-          <PerspectiveCamera makeDefault position={[0, 0, 30]} />
-        </Canvas>
-        {/* 
           <Suspense fallback={<CanvasLoader />}>
-            
-            <HackerRoom scale={0.05} position={[0, 0, 0]} />
-            <ambientalLight intensity={1} />
+            <PerspectiveCamera makeDefault position={[0, 0, 20]} />
+
+            <HeroCamera isMobile={isMobile}>
+              <HackerRoom
+                position={sizes.deskPosition}
+                scale={sizes.deskScale}
+                rotation={[0, -Math.PI, 0]}
+              />
+            </HeroCamera>
+
+            <group>
+              <Target position={sizes.targetPosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
+              <Cube position={sizes.cubePosition} />
+              <Rings position={sizes.ringPosition} />
+            </group>
+
+            <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
-        </Canvas> */}
+        </Canvas>
+      </div>
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#contact" className="w-fit">
+          <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-9"/>
+        </a>
       </div>
     </section>
-  );
+  );  
 };
 
 export default Hero;
