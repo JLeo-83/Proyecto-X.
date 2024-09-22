@@ -290,7 +290,7 @@ export const workExperiences = [
     title:
       "I'm currently learning React to build dynamic user interfaces. This framework allows me to create interactive web applications, and I'm enjoying the process of mastering component-based architecture.",
     icon: "/assets/react.png",
-    animation: "victory",
+    animation: "clapping",
   },
   {
     id: 2,
@@ -300,7 +300,7 @@ export const workExperiences = [
     title:
       "I'm exploring Three.js to incorporate 3D graphics into my web projects. This library helps me understand the basics of 3D rendering and how to create engaging visual experiences on the web.",
     icon: "/assets/Three.js.png",
-    animation: "clapping",
+    animation: "salute",
   },
   {
     id: 3,
@@ -310,6 +310,6 @@ export const workExperiences = [
     title:
       "I use GitHub to manage my projects and collaborate with others. Learning version control has been essential in keeping my code organized and tracking changes effectively.",
     icon: "/assets/github.png",
-    animation: "salute",
+    animation: "victory",
   },
 ];

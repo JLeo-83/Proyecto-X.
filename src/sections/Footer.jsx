@@ -15,7 +15,7 @@ const Footer = () => {
             target="_blank"
             className="w-1/2 h-1/2"
           >
-            <img src="/assets/github.svg" alt="github" />
+            <img src="/assets/github.svg" alt="GitHub" />
           </a>
         </div>
         <div className="social-icon">
@@ -24,7 +24,7 @@ const Footer = () => {
             target="_blank"
             className="w-1/2 h-1/2"
           >
-            <img src="/assets/facebook.svg" alt="facebook" />
+            <img src="/assets/facebook.svg" alt="Facebook" />
           </a>
         </div>
         <div className="social-icon">
@@ -33,10 +33,16 @@ const Footer = () => {
             target="_blank"
             className="w-1/2 h-1/2"
           >
-            <img
-              src="/assets/instagram.svg"
-              alt="instagram"
-            />
+            <img src="/assets/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+        <div className="social-icon">
+          <a
+            href="https://www.linkedin.com/in/leo-garcia-ordinola-30291832a"
+            target="_blank"
+            className="w-1/2 h-1/2"
+          >
+            <img src="/assets/linkedin.svg" alt="Linkedin" />
           </a>
         </div>
       </div>

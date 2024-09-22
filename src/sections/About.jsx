@@ -87,11 +87,16 @@ const About = () => {
                 <p className="grid-subtext">
                   I live in Piura, Perú and open to remote work worldwide.
                 </p>
-                <Button
-                  name="Contact Me"
-                  isBeam
-                  containerClass="w-full mt-10"
-                />
+                <a
+                  href="https://www.linkedin.com/in/leo-garcia-ordinola-30291832a/"
+                  target="_blank"
+                >
+                  <Button
+                    name="Contact Me"
+                    isBeam
+                    containerClass="w-full mt-10"
+                  />
+                </a>
               </div>
             </div>
           </div>
