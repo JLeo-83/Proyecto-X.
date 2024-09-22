@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
@@ -10,18 +10,39 @@ const Footer = () => {
       </div>
       <div className="flex gap-3">
         <div className="social-icon">
-          <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
+          <a
+            href="https://github.com/JLeo-83"
+            target="_blank"
+            className="w-1/2 h-1/2"
+          >
+            <img src="/assets/github.svg" alt="github" />
+          </a>
         </div>
         <div className="social-icon">
-          <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2" />
+          <a
+            href="https://www.facebook.com/profile.php?id=61555502026909"
+            target="_blank"
+            className="w-1/2 h-1/2"
+          >
+            <img src="/assets/facebook.svg" alt="facebook" />
+          </a>
         </div>
         <div className="social-icon">
-          <img src="/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2" />
+          <a
+            href="https://www.instagram.com/leo_garcia0rdinola/?hl=es-la"
+            target="_blank"
+            className="w-1/2 h-1/2"
+          >
+            <img
+              src="/assets/instagram.svg"
+              alt="instagram"
+            />
+          </a>
         </div>
       </div>
-      <p className='text-white-500'>@2024 Leandro. All rights reserved.</p>
+      <p className="text-white-500">@2024 Leandro. All rights reserved.</p>
     </section>
   );
-}
+};
 
-export default Footer
+export default Footer;
