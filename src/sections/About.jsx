@@ -27,12 +27,9 @@ const About = () => {
               />
 
               <div>
-                <p className="grid-headtext">Hi, I'm Leandro Garcia </p>
+                <p className="grid-headtext">Hola, soy Leo García </p>
                 <p className="grid-subtext">
-                  As a beginner in full stack development, I am currently
-                  building foundational skills in both frontend and backend
-                  development, working towards creating dynamic and responsive
-                  websites.
+                  Como principiante en desarrollo full stack, actualmente estoy construyendo mis bases tanto en desarrollo frontend como backend, trabajando para crear sitios web dinámicos y adaptativos.
                 </p>
               </div>
             </div>
@@ -47,11 +44,9 @@ const About = () => {
               />
 
               <div>
-                <p className="grid-headtext">Tech Stack</p>
+                <p className="grid-headtext">Tecnologías</p>
                 <p className="grid-subtext">
-                  I'm currently learning a variety of languages, frameworks, and
-                  tools that will help me build robust and scalable applications
-                  as I continue to grow my skills.
+                  Actualmente estoy aprendiendo una variedad de lenguajes, frameworks y herramientas que me ayudarán a construir aplicaciones robustas y escalables a medida que continúo desarrollando mis habilidades.
                 </p>
               </div>
             </div>
@@ -82,17 +77,17 @@ const About = () => {
               </div>
               <div>
                 <p className="grid-headtext">
-                  I'm very flexible with time zone communications & locations
+                  Zona horaria y disponibilidad
                 </p>
                 <p className="grid-subtext">
-                  I live in Piura, Perú and open to remote work worldwide.
+                  Tengo mucha flexibilidad con los horarios y las comunicaciones. Vivo en Piura, Perú, y estoy abierto a trabajar de forma remota para cualquier parte del mundo.
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/leo-garcia-ordinola-30291832a/"
+                  href="https://www.linkedin.com/in/jesus-leandro-g-21263a383/"
                   target="_blank"
                 >
                   <Button
-                    name="Contact Me"
+                    name="Contáctame"
                     isBeam
                     containerClass="w-full mt-10"
                   />
@@ -110,11 +105,9 @@ const About = () => {
               />
 
               <div>
-                <p className="grid-headtext">My Passion for Coding</p>
+                <p className="grid-headtext">Mi pasión por la programación</p>
                 <p className="grid-subtext">
-                  I enjoy solving problems and building things through code.
-                  Programming is becoming a passion for me as I continue to
-                  explore new technologies and enhance my skills.
+                  Me encanta resolver problemas y dar vida a ideas mediante el código. Con cada nueva tecnología que exploro y cada habilidad que mejoro, la programación se vuelve más mi pasión.
                 </p>
               </div>
             </div>
@@ -129,7 +122,7 @@ const About = () => {
               />
 
               <div className="space-y-2">
-                <p className="grid-subtext text-center">Contact me</p>
+                <p className="grid-subtext text-center">Contáctame</p>
                 <div className="copy-container" onClick={handleCopy}>
                   <img
                     src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}

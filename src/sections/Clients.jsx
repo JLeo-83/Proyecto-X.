@@ -2,7 +2,7 @@ import { clientReviews } from "../constants/index.js";
 const Clients = () => {
     return (
       <section className="c-space my-20">
-        <h3 className="head-text">My Progress</h3>
+        <h3 className="head-text">Mi Progreso</h3>
         <div className="client-container">
           {clientReviews.map(({ id, name, review, img, position }) => (
             <div key={id} className="client-review">
@@ -19,7 +19,7 @@ const Clients = () => {
                     </div>
                   </div>
                   <div className="flex self-end items-center gap-2">
-                    {Array.from({ length: 5 }).map((_, index) => (
+                    {Array.from({ length: 3 }).map((_, index) => (
                       <img
                         key={index}
                         src="assets/star.png"

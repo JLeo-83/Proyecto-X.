@@ -1,105 +1,87 @@
 export const navLinks = [
   {
     id: 1,
-    name: "Home",
+    name: "Inicio",
     href: "#home",
   },
   {
     id: 2,
-    name: "About",
+    name: "Sobre mí",
     href: "#about",
   },
   {
     id: 3,
-    name: "Work",
+    name: "Proyectos",
     href: "#work",
   },
   {
     id: 4,
-    name: "Contact",
+    name: "Contacto",
     href: "#contact",
   },
 ];
-
 export const clientReviews = [
   {
     id: 1,
-    name: "Learning Next.js and Tailwind CSS",
-    position: "Current Project",
+    name: "Aprendiendo Next.js y Tailwind CSS",
+    position: "Proyecto actual",
     img: "assets/review1.png",
     review:
-      "I'm currently learning to use Next.js and Tailwind CSS to build responsive, modern web applications. This project is helping me understand the basics of frontend development and design, focusing on clean, maintainable code.",
+      "Actualmente estoy aprendiendo a usar Next.js y Tailwind CSS para construir aplicaciones web modernas y responsivas. Este proyecto me está ayudando a comprender los fundamentos del desarrollo y diseño frontend, enfocándome en escribir código limpio y mantenible.",
   },
   {
     id: 2,
-    name: "Exploring Backend Development",
-    position: "Self-Learning",
+    name: "Explorando el desarrollo Backend",
+    position: "Autodidacta",
     img: "assets/review2.png",
     review:
-      "As I delve into backend development, I'm gaining experience in setting up databases, handling server-side logic, and ensuring security. My focus is on building a solid foundation to create scalable and secure web applications.",
+      "A medida que me adentro en el desarrollo backend, voy adquiriendo experiencia en la configuración de bases de datos, manejo de la lógica del lado del servidor y seguridad. Mi objetivo es construir una base sólida para crear aplicaciones web escalables y seguras.",
   },
   {
     id: 3,
-    name: "Personal Projects",
-    position: "Practice and Growth",
+    name: "Proyectos personales",
+    position: "Práctica y crecimiento",
     img: "assets/review3.png",
     review:
-      "Through personal projects like a simple to-do app and an e-commerce platform, I'm applying what I've learned in real-world scenarios. These projects are helping me improve both my frontend and backend skills.",
+      "A través de proyectos propios, como una aplicación de tareas sencilla y una plataforma de comercio electrónico, aplico lo aprendido en escenarios del mundo real. Estos proyectos me ayudan a mejorar mis habilidades tanto en frontend como en backend.",
   },
   {
     id: 4,
-    name: "Continuous Learning",
-    position: "Ongoing Education",
+    name: "Aprendizaje continuo",
+    position: "Educación constante",
     img: "assets/review4.png",
     review:
-      "I'm dedicated to improving my web development skills by exploring new technologies and frameworks. Each project I undertake allows me to enhance my problem-solving abilities and deepen my understanding of development best practices.",
+      "Me dedico a mejorar mis habilidades en desarrollo web explorando nuevas tecnologías y frameworks. Cada proyecto que realizo me permite potenciar mi capacidad para resolver problemas y profundizar en las mejores prácticas de desarrollo.",
   },
 ];
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "Letras y Alabanzas - Centro Evangélico Vida Nueva",
+    desc: "Sitio web para recopilar y compartir las letras de las alabanzas del Centro Evangélico Vida Nueva. Permite buscar canciones por título, artista o letra, reproducir videos de YouTube, y ver las letras en modo proyección para cultos.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://github.com/JLeo-83",
-    texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
+      "Construido con HTML, CSS y JavaScript puro. Incluye modo oscuro/claro, PWA instalable, reproductor de audio personalizado y búsqueda en tiempo real.",
+    href: "https://letras-vidanueva.netlify.app",
+    texture: "/textures/project/project1.mp4ñ",
+    logo: "/assets/project-logo1.webp",
     logoStyle: {
-      backgroundColor: "#2A1816",
+      backgroundColor: "#ffffff",
       border: "0.2px solid #36201D",
       boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
     spotlight: "/assets/spotlight1.png",
     tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+      { id: 1, name: "HTML", path: "/assets/html.svg" },
+      { id: 2, name: "CSS", path: "assets/css.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/javascript.svg" },
     ],
   },
   {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+    title: "Menú Básico Responsivo",
+    desc: "Menú de navegación responsivo con diseño limpio y adaptable a cualquier tamaño de pantalla. Incluye animaciones suaves y una experiencia de usuario intuitiva tanto en móvil como en escritorio.",
     subdesc:
-      "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-    href: "https://github.com/JLeo-83",
+      "Desarrollado con HTML, CSS y JavaScript. Demuestra dominio de diseño responsivo, flexbox y manejo del DOM.",
+    href: "https://menubasicoresponsivo.netlify.app",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo2.png",
     logoStyle: {
@@ -109,73 +91,39 @@ export const myProjects = [
     },
     spotlight: "/assets/spotlight2.png",
     tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+      { id: 1, name: "HTML", path: "/assets/html.svg" },
+      { id: 2, name: "CSS", path: "assets/css.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/javascript.svg" },
     ],
   },
   {
-    title: "CarePulse - Health Management System",
-    desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+    title: "Landing Page con Efecto Parallax",
+    desc: "Landing page moderna con un banner principal que implementa efecto parallax al hacer scroll. Diseño atractivo, completamente responsivo y con animaciones fluidas que mejoran la experiencia visual del usuario.",
     subdesc:
-      "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-    href: "https://github.com/JLeo-83",
+      "Construida con HTML, CSS y JavaScript. El efecto parallax está implementado de forma nativa sin librerías externas, optimizado para rendimiento.",
+    href: "https://efectoparallaxresponsive.netlify.app",
     texture: "/textures/project/project3.mp4",
     logo: "/assets/project-logo3.png",
     logoStyle: {
-      backgroundColor: "#60f5a1",
+      backgroundColor: "rgba(231, 81, 22, 0.81)",
       background:
-        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+        "linear-gradient(0deg, #f5c16050, #f5a36050), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(221, 212, 208, 0.8) 100%)",
       border: "0.2px solid rgba(208, 213, 221, 1)",
-      boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
+      boxShadow: "0px 0px 60px 0px  rgba(231, 81, 22, 0.59)",
     },
-    spotlight: "/assets/spotlight3.png",
+    spotlight: "/assets/spotlight1.png",
     tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+        { id: 1, name: "HTML", path: "/assets/html.svg" },
+      { id: 2, name: "CSS", path: "assets/css.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/javascript.svg" },
     ],
   },
   {
-    title: "Horizon - Online Banking Platform",
-    desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+    title: "Portafolio 3D Personal",
+    desc: "Portafolio personal interactivo con gráficos 3D, animaciones fluidas y diseño moderno. Muestra proyectos, habilidades y experiencia de forma visualmente impactante con modelos 3D animados.",
     subdesc:
-      "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-    href: "https://github.com/JLeo-83",
+      "Construido con React.js, Three.js, React Three Fiber, GSAP y Tailwind CSS. Desplegado en Netlify con integración continua desde GitHub.",
+    href: "https://proyectotree.netlify.app",
     texture: "/textures/project/project4.mp4",
     logo: "/assets/project-logo4.png",
     logoStyle: {
@@ -185,63 +133,9 @@ export const myProjects = [
     },
     spotlight: "/assets/spotlight4.png",
     tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
-    ],
-  },
-  {
-    title: "Imaginify - AI Photo Manipulation App",
-    desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
-    subdesc:
-      "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-    href: "https://github.com/JLeo-83",
-    texture: "/textures/project/project5.mp4",
-    logo: "/assets/project-logo5.png",
-    logoStyle: {
-      backgroundColor: "#1C1A43",
-      border: "0.2px solid #252262",
-      boxShadow: "0px 0px 60px 0px #635BFF4D",
-    },
-    spotlight: "/assets/spotlight5.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+      { id: 1, name: "React.js", path: "/assets/react.svg" },
+      { id: 2, name: "TailwindCSS", path: "assets/tailwindcss.png" },
+      { id: 3, name: "Three.js", path: "/assets/Three.js.png" },
     ],
   },
 ];
@@ -285,31 +179,31 @@ export const workExperiences = [
   {
     id: 1,
     name: "React",
-    pos: "Learning Framework",
-    duration: "2023 - Present",
+    pos: "Aprendiendo el Framework",
+    duration: "2024 - Presente",
     title:
-      "I'm currently learning React to build dynamic user interfaces. This framework allows me to create interactive web applications, and I'm enjoying the process of mastering component-based architecture.",
+      "Actualmente estoy aprendiendo React para construir interfaces de usuario dinámicas. Este framework me permite crear aplicaciones web interactivas y disfruto el proceso de dominar la arquitectura basada en componentes.",
     icon: "/assets/react.png",
     animation: "clapping",
   },
   {
     id: 2,
     name: "Three.js",
-    pos: "3D JavaScript Library",
-    duration: "2023 - Present",
+    pos: "Librería JavaScript 3D",
+    duration: "2024 - Presente",
     title:
-      "I'm exploring Three.js to incorporate 3D graphics into my web projects. This library helps me understand the basics of 3D rendering and how to create engaging visual experiences on the web.",
+      "Estoy explorando Three.js para incorporar gráficos 3D en mi proyectos web. Esta librería me ayuda a comprender los fundamentos del renderizado en 3D y cómo crear experiencias visuales atractivas en la web.",
     icon: "/assets/Three.js.png",
     animation: "salute",
   },
   {
     id: 3,
     name: "GitHub",
-    pos: "Version Control Tool",
-    duration: "2023 - Present",
+    pos: "Herramienta de Control de Versiones",
+    duration: "2023 - Presente",
     title:
-      "I use GitHub to manage my projects and collaborate with others. Learning version control has been essential in keeping my code organized and tracking changes effectively.",
-    icon: "/assets/github.png",
+      "Uso GitHub para gestionar mis proyectos y colaborar con otros. Aprender control de versiones ha sido esencial para mantener mi código organizado y realizar un seguimiento de los cambios de manera efectiva.",
+    icon: "/assets/github.svg",
     animation: "victory",
   },
 ];

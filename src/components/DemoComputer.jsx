@@ -6,25 +6,25 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 const DemoComputer = (props) => {
     const group = useRef();
-    const { nodes, materials} = useGLTF("/models/computer.glb");
+    const { nodes, materials } = useGLTF("/models/computer.glb");
     const txt = useVideoTexture(
-      texture ? props.texture : "/textures/project/project1.mp4"
+        texture ? props.texture : "/textures/project/menu-responsivo.mp4",
     );
 
     useEffect(() => {
         if (txt) {
             txt.flipY = false;
         }
-        }, [txt])
+    }, [txt])
 
-    useGSAP (() => {
+    useGSAP(() => {
         gsap.from(group.current.rotation, {
             y: Math.PI / 2,
             duration: 1,
             ease: "power3.out"
         })
-    }, [txt] )
-    
+    }, [txt])
+
     return (
         <group ref={group} {...props} dispose={null}>
             <group name="Scene">

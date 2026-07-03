@@ -9,15 +9,15 @@ const Target = (props) => {
 
     useGSAP(() => {
         gsap.to(targetRef.current.position, {
-            y: targetRef.current.position.y + 0.5,
-            duration: 1.5,
-            repeat: -1,
-            yoyo: true,
+            y: targetRef.current.position.y + 5.5,
+            duration: 2, //velocidad del rebote
+            repeat: -1, //repite el rebote infinitamente
+            yoyo: true, //Sube y baja el objeto
         });
     });
 
     return (
-        <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
+        <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 11]} scale={0.7}>
             <primitive object={scene} />
         </mesh>
     );

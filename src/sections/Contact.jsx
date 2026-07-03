@@ -59,21 +59,21 @@ const Contact = () => {
         />
 
         <div className="contact-container">
-          <h3 className="head-text">Let's Connect</h3>
-          <p className="text-lg text-white-600 mt-3">
-            If you're interested in discussing web development, sharing project
-            ideas, or exploring how I'm growing as a developer, feel free to
-            reach out. I'm always eager to learn and collaborate on new
-            challenges as I build my skills.
+          <h3 className="head-text">Hablemos</h3>
+          <p className="text-lg text-white-600 mt-1">
+            Si te interesa conversar sobre desarrollo web, compartir ideas de proyectos
+            o conocer más sobre mi crecimiento como desarrollador, no dudes en
+            escribirme. Siempre estoy dispuesto a aprender y colaborar en nuevos
+            desafíos a medida que desarrollo mis habilidades.
           </p>
 
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col space-y-7"
+            className="mt-7 flex flex-col space-y-7"
           >
-            <label className="space-y-3">
-              <span className="field-label">Full Name</span>
+            <label className="space-y-1">
+              <span className="field-label">Nombre completo</span>
               <input
                 type="text"
                 name="name"
@@ -81,12 +81,12 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="Leo Lander"
+                placeholder="Juan Pérez"
               />
             </label>
 
-            <label className="space-y-3">
-              <span className="field-label">Email address</span>
+            <label className="space-y-1">
+              <span className="field-label">Correo electrónico</span>
               <input
                 type="email"
                 name="email"
@@ -94,25 +94,24 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="leolander@gmail.com"
+                placeholder="juanperez@gmail.com"
               />
             </label>
 
-            <label className="space-y-3">
-              <span className="field-label">Your message</span>
+            <label className="space-y-1">
+              <span className="field-label">Tu mensaje</span>
               <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 required
-                rows={5}
+                rows={4}
                 className="field-input"
-                placeholder="Share your thoughts or inquiries..."
+                placeholder="Comparte tus ideas o consultas..."
               />
             </label>
-
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? "Enviando..." : "Enviar mensaje"}
 
               <img
                 src="/assets/arrow-up.png"

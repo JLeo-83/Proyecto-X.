@@ -31,7 +31,7 @@ const Rings = ({ position }) => {
                     {
                         y: `+=${Math.PI * 2}`,
                         x: `-=${Math.PI * 2}`,
-                        duration: 2.5,
+                        duration: 7.5,
                         stagger: {
                             each: 0.15,
                         },
